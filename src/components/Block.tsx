@@ -5,7 +5,7 @@ import Text from "./atoms/Text";
 const Block: FunctionComponent = () => (
   <div className="bg-dark p-10 flex flex-col justify-end">
     <div className="py-20">
-      <TextXXL className="text-blue">ella_wirstad</TextXXL>
+      <TextXXL className="text-blue">ella wirstad_</TextXXL>
       <TextXXL>experience designer &amp; interaction developer</TextXXL>
     </div>
     <Text className="w-4/12 py-20">
