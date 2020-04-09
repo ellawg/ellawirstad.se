@@ -9,7 +9,7 @@ const Block: FunctionComponent = () => (
       <TextXXL>experience designer &amp; interaction developer</TextXXL>
     </div>
     <Text className="w-4/12 py-20">
-      i study media technology, run a tiny digital agency on the side, and get
+      i study interactive media technology, run a tiny digital agency on the side, and get
       excited about intersecting tech and design
     </Text>
   </div>
