@@ -11,7 +11,7 @@ const WorkBlock: FunctionComponent<Props> = ({ work }) => {
   const [hover, setHover] = useState(false);
   return (
     <div
-      className="bg-shell border hover:cursor-pointer hover:bg-white border-dark py-40 px-8 -mt-1"
+      className="bg-shell hover:cursor-pointer hover:bg-white border-t border-dark py-40 px-8"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >

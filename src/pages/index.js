@@ -16,12 +16,12 @@ const IndexPage = () => (
     <SideBar title="intro" />
     <Block />
     <div className="w-3/5 flex flex-col justify-between">
-      <TextUppercase className="text-dark h-full p-8 bg-beige border border-dark">
+      <TextUppercase className="text-dark h-full p-8 bg-beige">
         Project
       </TextUppercase>
       <div>
         {work.map(item => (
-          <WorkBlock work={item} />
+          <WorkBlock key={item.id} work={item} />
         ))}
       </div>
     </div>
