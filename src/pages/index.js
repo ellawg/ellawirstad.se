@@ -7,8 +7,8 @@ import SideBar from "../components/molecules/SideBar";
 import TextUppercase from "../components/atoms/TextUppercase";
 
 const work = [
-  { title: "sincere wines", id: 1 },
-  { title: "minimize", id: 2 },
+  { title: "sincere wines", id: 1, path: "sincere-wines", tags: ["gatsby"] },
+  { title: "minimize", id: 2, path: "minimize", tags: ["next"] },
 ];
 
 const IndexPage = () => (

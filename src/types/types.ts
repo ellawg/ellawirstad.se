@@ -1,4 +1,5 @@
 export interface WorkData {
-    title: string;
-    id: number;
+  title: string;
+  id: number;
+  path: string;
 }
