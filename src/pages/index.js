@@ -23,9 +23,11 @@ const work = [
 
 const IndexPage = () => (
   <Layout>
-    <SideBar title="intro" />
-    <Block />
-    <div className="w-3/5 flex flex-col justify-between">
+    <div className="flex flex-row xl:w-8/12 w-full">
+      <SideBar title="intro" />
+      <Block />
+    </div>
+    <div className="flex flex-col xl:w-4/12 w-full justify-between">
       <TextUppercase className="text-dark h-full p-8 bg-beige">
         Project
       </TextUppercase>
