@@ -14,15 +14,15 @@ const WorkBlock: FunctionComponent<Props> = ({ work }) => {
   const [hover, setHover] = useState(false);
   return (
     <div
-      className="bg-shell flex flex-col hover:cursor-pointer hover:bg-white border-t border-dark pt-32 pb-24 px-8"
+      className="bg-shell flex flex-col hover:cursor-pointer hover:bg-white border-t border-dark pt-12 pb-12 px-8"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      <Arrow className="flex self-end" hover={hover} />
+      <Arrow className="flex self-end mb-10" hover={hover} />
       <Text
         className={combineClasses([
-          "text-2xl cursor-default pb-12",
-          hover ? "text-blue-400" : "text-blue",
+          "text-2xl cursor-default pb-24",
+          hover ? "text-blue" : "text-dark",
         ])}
       >
         0{work.id} — {work.title}
@@ -33,7 +33,7 @@ const WorkBlock: FunctionComponent<Props> = ({ work }) => {
             key={item}
             className={combineClasses([
               "text-2xs mr-4 pt-10",
-              hover ? "text-orange-400" : "text-orange",
+              hover ? "text-orange" : "text-orange-400",
             ])}
           >
             {item}
