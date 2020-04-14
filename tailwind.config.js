@@ -13,6 +13,7 @@ module.exports = {
         shell: "#FCFCFA",
         white: "#FFFFFF",
         dark: "#090A10",
+        "dark-400": "#4C4C51",
         black: "#000000",
         blue: "#52629A",
         orange: "#f93700",

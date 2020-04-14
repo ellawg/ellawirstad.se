@@ -18,11 +18,11 @@ const WorkBlock: FunctionComponent<Props> = ({ work }) => {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      <Arrow className="flex self-end" />
+      <Arrow className="flex self-end" hover={hover} />
       <Text
         className={combineClasses([
           "text-2xl cursor-default pb-12",
-          hover ? "text-blue-600" : "text-blue",
+          hover ? "text-blue-400" : "text-blue",
         ])}
       >
         0{work.id} — {work.title}
@@ -30,9 +30,10 @@ const WorkBlock: FunctionComponent<Props> = ({ work }) => {
       <div className="flex flex-row">
         {work.tags.map(item => (
           <TextUppercase
+            key={item}
             className={combineClasses([
               "text-2xs mr-4 pt-10",
-              hover ? "text-orange" : "text-orange-400",
+              hover ? "text-orange-400" : "text-orange",
             ])}
           >
             {item}
