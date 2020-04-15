@@ -1,10 +1,11 @@
 import React, { FunctionComponent, useState } from "react";
 import { combineClasses } from "@minimizelab/mini_utils";
 
-import { WorkData } from "../types/types";
-import Text from "./atoms/Text";
-import TextUppercase from "./atoms/TextUppercase";
-import Arrow from "./atoms/Arrow";
+import { WorkData } from "../../types/types";
+import Text from "../atoms/Text";
+import TextUppercase from "../atoms/TextUppercase";
+import Arrow from "../atoms/Arrow";
+
 
 interface Props {
   work: WorkData;
