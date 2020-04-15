@@ -1,11 +1,11 @@
 import React, { FunctionComponent, useState } from "react";
+import Link from "next/link";
 import { combineClasses } from "@minimizelab/mini_utils";
 
 import { WorkData } from "../../types/types";
 import Text from "../atoms/Text";
 import TextUppercase from "../atoms/TextUppercase";
 import Arrow from "../atoms/Arrow";
-
 
 interface Props {
   work: WorkData;
@@ -20,6 +20,9 @@ const WorkBlock: FunctionComponent<Props> = ({ work }) => {
       onMouseLeave={() => setHover(false)}
     >
       <Arrow className="flex self-end mb-10" hover={hover} />
+      <Link href="/work/[id]" as={`/work/${work.id}`}>
+        <a>Click project</a>
+      </Link>
       <Text
         className={combineClasses([
           "text-2xl cursor-default pb-24",

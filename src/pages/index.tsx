@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/organisms/Layout";
 
-import Intro from "../components/organisms/Intro";
+import IntroBlock from "../components/organisms/IntroBlock";
 import WorkBlock from "../components/organisms/WorkBlock";
 import SideBar from "../components/molecules/SideBar";
 import ProjectsBlock from "../components/organisms/ProjectsBlock";
@@ -25,7 +25,7 @@ const IndexPage = () => (
   <Layout>
     <div className="flex flex-row xl:w-8/12 w-full">
       <SideBar title="intro" />
-      <Intro />
+      <IntroBlock />
     </div>
     <div className="flex flex-col xl:w-4/12 w-full justify-between">
       <ProjectsBlock />

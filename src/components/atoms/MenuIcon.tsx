@@ -7,7 +7,7 @@ const MenuIcon = () => {
   return (
     <div
       onClick={() => setClicked(!clicked)}
-      className={"flex flex-row h-10 w-6 justify-center"}
+      className={"flex flex-row h-8 w-6 justify-center"}
     >
       <img
         className={combineClasses([

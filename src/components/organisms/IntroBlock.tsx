@@ -2,10 +2,12 @@ import React, { FunctionComponent } from "react";
 import TextXXL from "../atoms/TextXXL";
 import Text from "../atoms/Text";
 
-const Intro: FunctionComponent = () => (
+const IntroBlock: FunctionComponent = () => (
   <div className="bg-dark p-10 flex flex-col justify-end">
     <div className="py-20">
-      <TextXXL className="text-blue">ella—wirstad</TextXXL>
+      <TextXXL className="text-blue">
+        ell<span className="tracking-widest">a—</span>wirstad
+      </TextXXL>
       <TextXXL>experience designer &amp; interaction developer</TextXXL>
     </div>
     <Text className="xs:w-8/12 md:w-4/12 w-10/12 py-20">
@@ -15,4 +17,4 @@ const Intro: FunctionComponent = () => (
   </div>
 );
 
-export default Intro;
+export default IntroBlock;
