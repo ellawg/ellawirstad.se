@@ -14,37 +14,36 @@ interface Props {
 const WorkBlock: FunctionComponent<Props> = ({ work }) => {
   const [hover, setHover] = useState(false);
   return (
-    <div
-      className="bg-shell flex flex-col hover:cursor-pointer hover:bg-white border-t border-dark pt-12 pb-12 px-8"
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
-    >
-      <Arrow className="flex self-end mb-10" hover={hover} />
-      <Link href="/work/[id]" as={`/work/${work.id}`}>
-        <a>Click project</a>
-      </Link>
-      <Text
-        className={combineClasses([
-          "text-2xl cursor-default pb-24",
-          hover ? "text-blue" : "text-dark",
-        ])}
+    <Link href="/work/[id]" as={`/work/${work.id}`}>
+      <div
+        className="bg-shell flex cursor-pointer flex-col hover:cursor-pointer hover:bg-white border-t border-dark pt-12 pb-12 px-8"
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
       >
-        0{work.id} — {work.title}
-      </Text>
-      <div className="flex flex-row">
-        {work.tags.map(item => (
-          <TextUppercase
-            key={item}
-            className={combineClasses([
-              "text-2xs mr-4 pt-10",
-              hover ? "text-orange" : "text-orange-400",
-            ])}
-          >
-            {item}
-          </TextUppercase>
-        ))}
+        <Arrow className="flex self-end mb-10" hover={hover} />
+        <Text
+          className={combineClasses([
+            "text-2xl pb-24",
+            hover ? "text-blue" : "text-dark",
+          ])}
+        >
+          0{work.id} — {work.title}
+        </Text>
+        <div className="flex flex-row">
+          {work.tags.map(item => (
+            <TextUppercase
+              key={item}
+              className={combineClasses([
+                "text-2xs mr-4 pt-10",
+                hover ? "text-orange" : "text-orange-400",
+              ])}
+            >
+              {item}
+            </TextUppercase>
+          ))}
+        </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
