@@ -5,21 +5,7 @@ import IntroBlock from "../components/organisms/IntroBlock";
 import WorkBlock from "../components/organisms/WorkBlock";
 import SideBar from "../components/molecules/SideBar";
 import ProjectsBlock from "../components/organisms/ProjectsBlock";
-
-const work = [
-  {
-    title: "sincere wines",
-    id: 1,
-    path: "sincere-wines",
-    tags: ["react", "gatsby", "cms", "ui", "ux"],
-  },
-  {
-    title: "minimize",
-    id: 2,
-    path: "minimize",
-    tags: ["react", "next", "ui", "ux"],
-  },
-];
+import { work } from "../store/work.js";
 
 const IndexPage = () => (
   <Layout>
