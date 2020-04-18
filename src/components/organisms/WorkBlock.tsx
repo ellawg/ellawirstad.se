@@ -3,9 +3,10 @@ import Link from "next/link";
 import { combineClasses } from "@minimizelab/mini_utils";
 
 import { WorkData } from "../../types/types";
-import Text from "../atoms/Text";
+import TextTitle from "../atoms/TextTitle";
 import TextUppercase from "../atoms/TextUppercase";
 import Arrow from "../atoms/Arrow";
+import Tags from "../molecules/Tags";
 
 interface Props {
   work: WorkData;
@@ -21,27 +22,15 @@ const WorkBlock: FunctionComponent<Props> = ({ work }) => {
         onMouseLeave={() => setHover(false)}
       >
         <Arrow className="flex self-end mb-10" hover={hover} />
-        <Text
+        <TextTitle
           className={combineClasses([
-            "text-2xl pb-24",
+            "pb-24",
             hover ? "text-blue" : "text-dark",
           ])}
         >
           0{work.id} — {work.title}
-        </Text>
-        <div className="flex flex-row">
-          {work.tags.map(item => (
-            <TextUppercase
-              key={item}
-              className={combineClasses([
-                "text-2xs mr-4 pt-10",
-                hover ? "text-orange" : "text-orange-400",
-              ])}
-            >
-              {item}
-            </TextUppercase>
-          ))}
-        </div>
+        </TextTitle>
+        <Tags tags={work.tags} hover={hover} />
       </div>
     </Link>
   );

@@ -12,6 +12,7 @@ module.exports = {
       },
       colors: {
         shell: "#FCFCFA",
+        mint: "#ECEDE8",
         white: "#FFFFFF",
         dark: "#090A10",
         "dark-400": "#4C4C51",
