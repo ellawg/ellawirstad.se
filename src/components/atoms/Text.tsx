@@ -6,9 +6,7 @@ interface Props {
 }
 
 const Text: FunctionComponent<Props> = ({ children, className }) => (
-  <p className={combineClasses([className, "text-dark-400 font-light"])}>
-    {children}
-  </p>
+  <p className={combineClasses(["font-light", className])}>{children}</p>
 );
 
 export default Text;

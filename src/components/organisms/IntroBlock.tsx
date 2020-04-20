@@ -10,7 +10,7 @@ const IntroBlock: FunctionComponent = () => (
       </TextXXL>
       <TextXXL>experience designer &amp; interaction developer</TextXXL>
     </div>
-    <Text className="xs:w-8/12 md:w-4/12 w-10/12 py-20">
+    <Text className="text-shell xs:w-8/12 md:w-4/12 w-10/12 py-20 ">
       i study interactive media technology, run a tiny digital agency on the
       side, and get excited about intersecting tech and design
     </Text>
