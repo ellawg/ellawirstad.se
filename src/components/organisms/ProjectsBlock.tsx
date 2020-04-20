@@ -1,6 +1,6 @@
 import React from "react";
 import TextUppercase from "../atoms/TextUppercase";
-import MenuIcon from "../atoms/MenuIcon";
+import Menu from "../molecules/Menu";
 
 const ProjectsBlock = () => (
   <div className="h-full bg-beige flex flex-row p-8 justify-between">
@@ -9,7 +9,6 @@ const ProjectsBlock = () => (
         Projects
       </TextUppercase>
     </div>
-    <MenuIcon />
   </div>
 );
 

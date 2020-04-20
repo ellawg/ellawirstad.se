@@ -5,6 +5,9 @@ module.exports = {
       sans: ["IBM Plex Sans", "sans-serif"],
     },
     extend: {
+      width: {
+        "3px": "3px",
+      },
       fontSize: {
         "2xs": ".7rem",
         "6xl": "4rem",

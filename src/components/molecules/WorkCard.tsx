@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
-import TextTitle from "../../components/atoms/TextTitle";
-import Tags from "../../components/molecules/Tags";
-import Text from "../../components/atoms/Text";
+import TextTitle from "../atoms/TextTitle";
+import Tags from "./Tags";
+import Text from "../atoms/Text";
 import { WorkData } from "../../types/types";
 
 const sincerewines = require("../../assets/work/sincerewines.png");

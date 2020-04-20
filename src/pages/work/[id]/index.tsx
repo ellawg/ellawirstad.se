@@ -2,7 +2,7 @@ import Layout from "../../../components/organisms/Layout";
 import SideBar from "../../../components/molecules/SideBar";
 
 import { work } from "../../../store/work.js";
-import WorkCard from "../../../components/organisms/WorkCard";
+import WorkCard from "../../../components/molecules/WorkCard";
 
 const Project = ({ item }) => {
   return (
