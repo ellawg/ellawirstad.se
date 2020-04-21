@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, FunctionComponent } from "react";
 import Line from "../../assets/line-vertical.svg";
 import { combineClasses } from "@minimizelab/mini_utils";
 
-const MenuIcon = ({ open, setOpen }) => {
+interface Props {
+  open: boolean;
+  setOpen: (boolean) => void;
+}
+
+const MenuIcon: FunctionComponent<Props> = ({ open, setOpen }) => {
   return (
     <div
       onClick={() => setOpen(!open)}

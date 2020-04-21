@@ -17,16 +17,16 @@ const Menu = () => {
       >
         <div className="w-2/3 mt-8">
           <TextXXL className="-mt-8">—</TextXXL>
-          <TextXXL className="text-shell">
+          <TextXXL>
             <LinkInteractive to="/">about</LinkInteractive>
           </TextXXL>
-          <TextXXL className="text-shell">
+          <TextXXL>
             <LinkInteractive to="/">all projects</LinkInteractive>
           </TextXXL>
-          <TextXXL className="text-shell">
+          <TextXXL>
             <LinkInteractive to="/">contact</LinkInteractive>
           </TextXXL>
-          <TextXXL className="text-shell">
+          <TextXXL>
             <LinkInteractive
               external
               to="https://www.linkedin.com/in/ella-wirstad-gustafsson-93b164131/"
@@ -34,7 +34,7 @@ const Menu = () => {
               github
             </LinkInteractive>
           </TextXXL>
-          <TextXXL className="text-shell">
+          <TextXXL>
             <LinkInteractive external to="https://github.com/ellawg">
               linkedin
             </LinkInteractive>

@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useState } from "react";
+import React, { FunctionComponent } from "react";
 import TextUppercase from "../atoms/TextUppercase";
 import { combineClasses } from "@minimizelab/mini_utils";
 
