@@ -21,18 +21,14 @@ const Project: FunctionComponent<Props> = ({ item }) => {
       <Menu />
       <SideBar title="Project" />
       <div className="flex flex-col justify-between">
-         <Link href="/">
-            <div className="m-8 cursor-pointer">
-              <Arrow left />
-            </div>
-          </Link>
-        <div className="flex flex-row">
-         
+        <Link href="/">
+          <div className="m-8 cursor-pointer">
+            <Arrow left />
+          </div>
+        </Link>
           <div className="flex flex-row justify-end items-center w-full h-full">
             <WorkCard item={item} />
           </div>
-        </div>
-
         <Logo className="m-8 self-end z-50" />
       </div>
     </Layout>
