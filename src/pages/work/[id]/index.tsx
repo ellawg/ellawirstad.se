@@ -14,26 +14,23 @@ interface Props {
   item: WorkData;
 }
 
-const Project: FunctionComponent<Props> = ({ item }) => {
-  const [hover, setHover] = useState(false);
-  return (
-    <Layout>
-      <Menu />
-      <SideBar title="Project" />
-      <div className="flex flex-col justify-between">
-        <Link href="/">
-          <div className="m-8 cursor-pointer">
-            <Arrow left />
-          </div>
-        </Link>
-          <div className="flex flex-row justify-end items-center w-full h-full">
-            <WorkCard item={item} />
-          </div>
-        <Logo className="m-8 self-end z-50" />
+const Project: FunctionComponent<Props> = ({ item }) => (
+  <Layout>
+    <Menu />
+    <SideBar title="Project" />
+    <div className="flex flex-col justify-between">
+      <Link href="/">
+        <div className="m-8 cursor-pointer">
+          <Arrow left />
+        </div>
+      </Link>
+      <div className="flex flex-row justify-end items-center w-full h-full">
+        <WorkCard item={item} />
       </div>
-    </Layout>
-  );
-};
+      <Logo className="m-8 self-end z-50" />
+    </div>
+  </Layout>
+);
 
 export const getServerSideProps = context => {
   const { id } = context.params;
