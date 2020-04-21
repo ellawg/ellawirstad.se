@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Line from "../../assets/line-vertical.svg";
+import LineWhite from "../../assets/line-vertical-white.svg";
 import { combineClasses } from "@minimizelab/mini_utils";
 
 const MenuIcon = ({ open, setOpen }) => {

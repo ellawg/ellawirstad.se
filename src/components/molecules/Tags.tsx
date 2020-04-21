@@ -14,7 +14,7 @@ const Tags: FunctionComponent<Props> = ({ tags, hover }) => (
         key={item}
         className={combineClasses([
           "text-2xs mr-4 pt-10",
-          hover ? "text-orange" : "text-orange-400",
+          hover ? "text-orange-400" : "text-orange",
         ])}
       >
         {item}

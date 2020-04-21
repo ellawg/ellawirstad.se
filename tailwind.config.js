@@ -24,7 +24,7 @@ module.exports = {
         orange: "#f93700",
         "blue-400": "#717EAC",
         "blue-600": "#2D3654",
-        "orange-400": "#D96745",
+        "orange-400": "#FF8967",
         "orange-600": "#821E00",
         beige: "#DBD5C9",
       },
