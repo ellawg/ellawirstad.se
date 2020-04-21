@@ -3,7 +3,6 @@ import MenuIcon from "../atoms/MenuIcon";
 import { combineClasses } from "@minimizelab/mini_utils";
 import TextXXL from "../atoms/TextXXL";
 import LinkInteractive from "../atoms/LinkInteractive";
-import LineHorizontal from "../atoms/LineHorizontal";
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
@@ -17,7 +16,7 @@ const Menu = () => {
         ])}
       >
         <div className="w-2/3 mt-8">
-          <LineHorizontal />
+          <TextXXL className="-mt-8">—</TextXXL>
           <TextXXL className="text-shell">
             <LinkInteractive to="/">about</LinkInteractive>
           </TextXXL>

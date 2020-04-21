@@ -3,10 +3,12 @@ import SideBar from "../../../components/molecules/SideBar";
 
 import { work } from "../../../store/work.js";
 import WorkCard from "../../../components/molecules/WorkCard";
+import Menu from "../../../components/molecules/Menu";
 
 const Project = ({ item }) => {
   return (
     <Layout>
+      <Menu />
       <SideBar title="BACK" link="/" />
       <div className="flex flex-row justify-end items-center w-full h-full">
         <WorkCard item={item} />
