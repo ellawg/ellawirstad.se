@@ -6,7 +6,12 @@ interface Props {
 }
 
 const TextXXL: FunctionComponent<Props> = ({ children, className }) => (
-  <p className={combineClasses([className, "sm:text-6xl xl:text-7xl text-5xl text-white"])}>
+  <p
+    className={combineClasses([
+      "sm:text-6xl xl:text-7xl text-5xl text-white",
+      className,
+    ])}
+  >
     {children}
   </p>
 );

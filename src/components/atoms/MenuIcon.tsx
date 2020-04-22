@@ -11,9 +11,10 @@ const MenuIcon: FunctionComponent<Props> = ({ open, setOpen }) => {
   return (
     <div
       onClick={() => setOpen(!open)}
-      className={
-        "flex flex-row h-8 w-4 justify-center absolute top-0 right-0 mt-8 mr-8 z-50 cursor-pointer"
-      }
+      className={combineClasses([
+        "flex flex-row h-8 w-4 justify-center top-0 right-0 mt-8 mr-8 z-50 cursor-pointer",
+        open ? "fixed" : "absolute",
+      ])}
     >
       <img
         className={combineClasses([

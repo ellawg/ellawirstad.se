@@ -3,6 +3,7 @@ import MenuIcon from "../atoms/MenuIcon";
 import { combineClasses } from "@minimizelab/mini_utils";
 import TextXXL from "../atoms/TextXXL";
 import LinkInteractive from "../atoms/LinkInteractive";
+import Logo from "../atoms/Logo";
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
@@ -11,7 +12,7 @@ const Menu = () => {
       <MenuIcon setOpen={setOpen} open={open} />
       <div
         className={combineClasses([
-          "transition duration-500 ease-in-out absolute top-0 right-0 h-screen w-screen w-4/12 z-40 flex justify-center",
+          "transition duration-500 ease-in-out fixed top-0 right-0 h-screen w-screen w-4/12 z-40 flex justify-center",
           open ? "opacity-100 visible bg-beige" : "invisible opacity-0",
         ])}
       >
@@ -40,6 +41,7 @@ const Menu = () => {
             </LinkInteractive>
           </TextXXL>
         </div>
+        <Logo className="fixed bottom-0 right-0 m-8" />
       </div>
     </>
   );

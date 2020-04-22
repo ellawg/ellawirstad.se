@@ -12,8 +12,7 @@ const IndexPage = () => (
   <Layout>
     <SideBar title="intro" />
     <div className="flex flex-wrap">
-      <div className="flex flex-row xl:w-8/12 w-full">
-        {/* <SideBar title="intro" /> */}
+      <div className="flex flex-row  xl:w-8/12 w-full">
         <IntroBlock />
       </div>
       <div className="flex flex-col xl:w-4/12 w-full justify-between">
