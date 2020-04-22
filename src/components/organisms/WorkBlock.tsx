@@ -4,7 +4,6 @@ import { combineClasses } from "@minimizelab/mini_utils";
 
 import { WorkData } from "../../types/types";
 import TextTitle from "../atoms/TextTitle";
-import TextUppercase from "../atoms/TextUppercase";
 import Arrow from "../atoms/Arrow";
 import Tags from "../molecules/Tags";
 
@@ -15,7 +14,7 @@ interface Props {
 const WorkBlock: FunctionComponent<Props> = ({ work }) => {
   const [hover, setHover] = useState(false);
   return (
-    <Link href="/work/[id]" as={`/work/${work.id}`}>
+    <Link href="/work/[pid]" as={`/work/${work.pid}`}>
       <div
         className="bg-shell flex cursor-pointer flex-col hover:cursor-pointer hover:bg-white border-t border-dark pt-12 pb-12 px-8"
         onMouseEnter={() => setHover(true)}

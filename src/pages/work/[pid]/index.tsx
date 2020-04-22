@@ -33,8 +33,8 @@ const Project: FunctionComponent<Props> = ({ item }) => (
 );
 
 export const getServerSideProps = context => {
-  const { id } = context.params;
-  const item = work.filter(item => item.id.toString() === id)[0];
+  const { pid } = context.params;
+  const item = work.filter(item => item.pid === pid)[0];
   return {
     props: {
       item,

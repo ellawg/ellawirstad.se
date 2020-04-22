@@ -16,13 +16,13 @@ const Menu = () => {
           open ? "opacity-100 visible bg-beige" : "invisible opacity-0",
         ])}
       >
-        <div className="w-2/3 mt-8">
+        <div className="w-7/12 mt-8">
           <TextXXL className="-mt-8">—</TextXXL>
           <TextXXL>
-            <LinkInteractive to="/">about</LinkInteractive>
+            <LinkInteractive to="/about">about</LinkInteractive>
           </TextXXL>
           <TextXXL>
-            <LinkInteractive to="/">all projects</LinkInteractive>
+            <LinkInteractive to="/projects">all projects</LinkInteractive>
           </TextXXL>
           <TextXXL>
             <LinkInteractive to="/">contact</LinkInteractive>

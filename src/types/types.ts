@@ -1,7 +1,7 @@
 export interface WorkData {
   title: string;
   id: number;
-  path: string;
+  pid: string;
   description: string;
   tags: string[];
 }

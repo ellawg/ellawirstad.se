@@ -3,6 +3,7 @@ import Link from "next/link";
 
 interface Props {
   external?: boolean;
+  dynamic?: boolean;
   to: string;
 }
 
