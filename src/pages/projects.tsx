@@ -10,37 +10,45 @@ import Logo from "../components/atoms/Logo";
 import { work } from "../store/work";
 import { school } from "../store/school";
 import LinkInteractive from "../components/atoms/LinkInteractive";
-import TextTitle from "../components/atoms/TextTitle";
+import Text from "../components/atoms/Text";
+import ProjectLink from "../components/molecules/ProjectLink";
 
 const ProjectsPage = () => {
   return (
     <Layout>
       <Menu />
-      <SideBar title="Projects" />
+      <SideBar title="All projects" />
       <Link href="/">
         <div className="m-8 cursor-pointer">
           <Arrow left />
         </div>
       </Link>
       <div className="flex flex-col items-center justify-center w-2/4">
-        <div className="justify-center ">
+        <div className="justify-between">
           {work.map(item => (
-            <TextXXL key={item.id} className="text-dark">
-              <LinkInteractive to={`/work/${item.pid}`}>
-                {item.title}
-              </LinkInteractive>
-            </TextXXL>
+            <ProjectLink to={`/work/${item.pid}`} key={item.id} id={item.id}>
+              {item.title}
+            </ProjectLink>
           ))}
           {school.map(item => (
-            <TextXXL key={item.id} className="text-dark">
-              <LinkInteractive external to={item.pid}>
-                {item.title}
-              </LinkInteractive>
-            </TextXXL>
+            <ProjectLink external to={item.pid} id={item.id} key={item.id}>
+              {item.title}
+            </ProjectLink>
           ))}
         </div>
-        <Logo className="m-8 absolute bottom-0 right-0 z-50" />
       </div>
+      <div className="flex items-end pb-32 justify-center w-2/4">
+        <ul>
+          {work.concat(school).map(item => (
+            <li key={item.id}>
+              <Text>
+                {item.id} — {item.short}
+              </Text>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <Logo className="m-8 absolute bottom-0 right-0 z-50" />
     </Layout>
   );
 };

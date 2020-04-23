@@ -10,7 +10,7 @@ interface Props {
 }
 
 const SideBar: FunctionComponent<Props> = ({ title, link }) => (
-  <div className="bg-dark text-white xl:h-full flex flex-col justify-start uppercase p-8">
+  <div className="bg-dark whitespace-no-wrap text-white xl:h-full flex flex-col justify-start uppercase p-8">
     {link ? (
       <Link href={link}>
         <span className="transform rotate-0 xl:rotate-90 w-4 cursor-pointer">
@@ -18,9 +18,7 @@ const SideBar: FunctionComponent<Props> = ({ title, link }) => (
         </span>
       </Link>
     ) : (
-      <span className="transform xl:rotate-90 w-4 rotate-0">
-        {title}
-      </span>
+      <span className="transform xl:rotate-90 w-4 rotate-0">{title}</span>
     )}
   </div>
 );

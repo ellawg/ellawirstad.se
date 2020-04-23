@@ -3,5 +3,6 @@ export interface WorkData {
   id: number;
   pid: string;
   description: string;
+  short: string;
   tags: string[];
 }
