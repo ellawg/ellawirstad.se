@@ -1,9 +1,21 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
+import Menu from "../molecules/Menu";
+import { combineClasses } from "@minimizelab/mini_utils";
 
-const Layout = ({ children }) => {
+interface Props {
+  className?: string;
+}
+
+const Layout: FunctionComponent<Props> = ({ children, className }) => {
   return (
     <>
-      <main className="flex flex-col xl:flex-row h-screen w-screen">
+      <Menu />
+      <main
+        className={combineClasses([
+          "flex bg-shell flex-col xl:flex-row h-screen w-screen",
+          className,
+        ])}
+      >
         {children}
       </main>
       {/* <footer>

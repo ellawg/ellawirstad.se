@@ -4,11 +4,9 @@ import SideBar from "../../../components/molecules/SideBar";
 
 import { work } from "../../../store/work.js";
 import WorkCard from "../../../components/molecules/WorkCard";
-import Menu from "../../../components/molecules/Menu";
 import Logo from "../../../components/atoms/Logo";
-import Arrow from "../../../components/atoms/Arrow";
-import Link from "next/link";
 import { WorkData } from "../../../types/types";
+import ArrowBack from "../../../components/molecules/ArrowBack";
 
 interface Props {
   item: WorkData;
@@ -16,18 +14,13 @@ interface Props {
 
 const Project: FunctionComponent<Props> = ({ item }) => (
   <Layout>
-    <Menu />
     <SideBar title="Project" />
     <div className="flex flex-col justify-between">
-      <Link href="/">
-        <div className="m-8 cursor-pointer">
-          <Arrow left />
-        </div>
-      </Link>
+      <ArrowBack />
       <div className="flex flex-row justify-end items-center w-full h-full">
         <WorkCard item={item} />
       </div>
-      <Logo className="m-8 self-end z-50" />
+      <Logo className="m-8 self-end" />
     </div>
   </Layout>
 );

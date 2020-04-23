@@ -16,7 +16,6 @@ const IndexPage = () => (
         <IntroBlock />
       </div>
       <div className="flex flex-col xl:w-4/12 w-full justify-between">
-        <Menu />
         <ProjectsBlock />
         <div>
           {work.map(item => (
