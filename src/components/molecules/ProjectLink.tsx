@@ -6,6 +6,7 @@ interface Props {
   id: number;
   to: string;
   external?: boolean;
+  setHoveredId?: (id: number) => void;
 }
 
 const ProjectLink: FunctionComponent<Props> = ({
@@ -13,8 +14,13 @@ const ProjectLink: FunctionComponent<Props> = ({
   id,
   to,
   external = false,
+  setHoveredId,
 }) => (
-  <div className="flex flex-row">
+  <div
+    className="flex flex-row"
+    onMouseEnter={() => setHoveredId(id)}
+    onMouseLeave={() => setHoveredId(0)}
+  >
     <TextXXL className="text-dark">
       {external ? (
         <LinkInteractive external to={to}>
