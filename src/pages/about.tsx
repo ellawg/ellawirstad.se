@@ -37,10 +37,12 @@ const AboutPage = () => {
                 Stockholm.
               </Text>
               <Text>
-                I like <span className="font-medium">designing</span> and{" "}
+                Your average nerd who spends hours scrolling on
+                Pinterest and tapping away in VS Code. I love{" "}
+                <span className="font-medium">designing</span> and{" "}
                 <span className="font-medium">developing</span> web sites, just
-                like this one. Pinterest and React are two things that make me
-                happy in life.
+                like this one. JS is my favorite language, and{" "}
+                <span className="font-medium">React</span> my favorite tool.
               </Text>
               <Text className="py-4">
                 This site is running on
