@@ -8,12 +8,13 @@ import Text from "../components/atoms/Text";
 
 import ella from "../assets/ella.jpg";
 import TextTitle from "../components/atoms/TextTitle";
+import LinkInteractive from "../components/atoms/LinkInteractive";
 
 const AboutPage = () => {
   return (
     <Layout className="bg-mint">
       <SideBar title="Contact" />
-      <div className="flex flex-col justify-between h-full">
+      <div className="flex w-full h-full flex-col justify-between">
         <ArrowBack />
         <div className="flex flex-row justify-center flex-wrap w-full h-full px-10 py-2 md:p-0">
           <div className="w-full md:w-1/2 mr-10 mb-4">
@@ -31,12 +32,42 @@ const AboutPage = () => {
             <div className="p-6 pb-20">
               <TextTitle>This is me!</TextTitle>
               <Text className="py-4">
-                I study Media Technology and Engineering at the KTH Royal
-                Institute of Technology in Stockholm
+                I study <span className="font-medium">Media Technology</span>{" "}
+                and Engineering at the KTH Royal Institute of Technology in
+                Stockholm.
               </Text>
               <Text>
-                I like designing and building web sites, just like this one.
-                Pinterest and React are two things that make me happy in life.
+                Your average nerd who spends hours scrolling on
+                Pinterest and tapping away in VS Code. I love{" "}
+                <span className="font-medium">designing</span> and{" "}
+                <span className="font-medium">developing</span> web sites, just
+                like this one. JS is my favorite language, and{" "}
+                <span className="font-medium">React</span> my favorite tool.
+              </Text>
+              <Text className="py-4">
+                This site is running on
+                <LinkInteractive external to="https://nextjs.org/">
+                  {" "}
+                  Next.js
+                </LinkInteractive>
+                , deployed using{" "}
+                <LinkInteractive external to="https://vercel.com/">
+                  {" "}
+                  Vercel
+                </LinkInteractive>{" "}
+                and styled with{" "}
+                <LinkInteractive external to="https://tailwindcss.com/">
+                  {" "}
+                  Tailwind CSS
+                </LinkInteractive>
+                . Wanna check out the code?{" "}
+                <LinkInteractive
+                  external
+                  to="https://github.com/ellawg/ellawirstad.se"
+                >
+                  {" "}
+                  <span className="font-medium">Go ahead!</span>
+                </LinkInteractive>
               </Text>
             </div>
           </div>

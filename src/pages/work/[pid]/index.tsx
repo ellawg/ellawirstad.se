@@ -4,7 +4,6 @@ import SideBar from "../../../components/molecules/SideBar";
 
 import { work } from "../../../store/work.js";
 import WorkCard from "../../../components/molecules/WorkCard";
-import Logo from "../../../components/atoms/Logo";
 import { WorkData } from "../../../types/types";
 import ArrowBack from "../../../components/molecules/ArrowBack";
 
@@ -15,12 +14,12 @@ interface Props {
 const Project: FunctionComponent<Props> = ({ item }) => (
   <Layout>
     <SideBar title="Project" />
-    <div className="flex flex-col justify-between">
-      <ArrowBack />
+    <ArrowBack />
+    <div className="flex w-full flex-col justify-between">
+      
       <div className="flex flex-row justify-end items-center w-full h-full">
         <WorkCard item={item} />
       </div>
-      <Logo className="m-8 self-end" />
     </div>
   </Layout>
 );

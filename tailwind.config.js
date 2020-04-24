@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       width: {
         "3px": "3px",
+        "24px": "24px",
       },
       fontSize: {
         "2xs": ".7rem",

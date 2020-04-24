@@ -58,7 +58,6 @@ const ProjectsPage = () => {
           </ul>
         </div>
       </div>
-      <Logo className="m-8 absolute bottom-0 right-0 z-50" />
     </Layout>
   );
 };
