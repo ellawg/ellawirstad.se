@@ -18,17 +18,20 @@ const Arrow: FunctionComponent<Props> = ({
   left = false,
 }) => {
   const [innerHover, setInnerHover] = useState(false);
-  return left ? (
+  return (
     <img
       onMouseEnter={() => setInnerHover(true)}
       onMouseLeave={() => setInnerHover(false)}
-      className={combineClasses([className, "w-8"])}
-      src={hover || innerHover ? leftArrowHover : leftArrow}
-    />
-  ) : (
-    <img
-      className={combineClasses([className, "w-8"])}
-      src={hover || innerHover ? rightArrowHover : rightArrow}
+      className={combineClasses(["w-8", className])}
+      src={
+        hover || innerHover
+          ? left
+            ? leftArrowHover
+            : rightArrowHover
+          : left
+          ? leftArrow
+          : rightArrow
+      }
     />
   );
 };
