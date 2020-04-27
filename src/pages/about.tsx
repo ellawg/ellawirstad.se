@@ -24,9 +24,7 @@ const AboutPage = () => {
             <TextXXL className="text-dark mr-10 mb-6">
               glad you found your way in here!
             </TextXXL>
-            <TextTitle className="mb-6 text-orange">
-              let's get to know each other
-            </TextTitle>
+            <TextTitle className="mb-6">let's get to know each other</TextTitle>
             <Text></Text>
           </div>
           <link
