@@ -6,6 +6,7 @@ import { work } from "../../../store/work.js";
 import WorkCard from "../../../components/molecules/WorkCard";
 import { WorkData } from "../../../types/types";
 import ArrowBack from "../../../components/molecules/ArrowBack";
+import Head from "next/head";
 
 interface Props {
   item: WorkData;
@@ -13,10 +14,12 @@ interface Props {
 
 const Project: FunctionComponent<Props> = ({ item }) => (
   <Layout>
+    <Head>
+      <title>ella — wirstad / work</title>
+    </Head>
     <SideBar title="Project" />
     <ArrowBack />
     <div className="flex w-full flex-col justify-between">
-      
       <div className="flex flex-row justify-end items-center w-full h-full">
         <WorkCard item={item} />
       </div>

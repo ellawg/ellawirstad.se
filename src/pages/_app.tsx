@@ -8,6 +8,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
+        <title>ella — wirstad</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" href="/static/images/favicon-32.png" sizes="32x32" />
         <link
           rel="icon"

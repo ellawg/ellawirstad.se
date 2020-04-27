@@ -2,18 +2,21 @@ import React, { useState } from "react";
 import { combineClasses } from "@minimizelab/mini_utils";
 import Layout from "../components/organisms/Layout";
 import SideBar from "../components/molecules/SideBar";
-import Logo from "../components/atoms/Logo";
 
 import { work } from "../store/work";
 import { school } from "../store/school";
 import Text from "../components/atoms/Text";
 import ProjectLink from "../components/molecules/ProjectLink";
 import ArrowBack from "../components/molecules/ArrowBack";
+import Head from "next/head";
 
 const ProjectsPage = () => {
   const [hoveredId, setHoveredId] = useState(0);
   return (
     <Layout>
+      <Head>
+        <title>ella — wirstad / all projects</title>
+      </Head>
       <SideBar title="All projects" />
       <ArrowBack />
       <div className="flex w-full h-full flex-wrap p-8 md:p-20 lg:p-8">
@@ -32,7 +35,7 @@ const ProjectsPage = () => {
             {school.map(item => (
               <ProjectLink
                 external
-                to={item.pid}
+                to={item.link}
                 id={item.id}
                 key={item.id}
                 setHoveredId={setHoveredId}
