@@ -28,15 +28,15 @@ const Menu = () => {
             <LinkInteractive to="/contact">contact</LinkInteractive>
           </TextXXL>
           <TextXXL>
-            <LinkInteractive
-              external
-              to="https://www.linkedin.com/in/ella-wirstad-gustafsson-93b164131/"
-            >
+            <LinkInteractive external to="https://github.com/ellawg">
               github
             </LinkInteractive>
           </TextXXL>
           <TextXXL>
-            <LinkInteractive external to="https://github.com/ellawg">
+            <LinkInteractive
+              external
+              to="https://www.linkedin.com/in/ella-wirstad-gustafsson-93b164131/"
+            >
               linkedin
             </LinkInteractive>
           </TextXXL>
