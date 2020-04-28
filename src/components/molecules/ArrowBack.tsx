@@ -3,7 +3,7 @@ import Arrow from "../atoms/Arrow";
 
 const ArrowBack = () => (
   <Link href="/">
-    <div className="m-8 cursor-pointer">
+    <div className="m-8 h-8 cursor-pointer">
       <Arrow left />
     </div>
   </Link>

@@ -36,7 +36,7 @@ const WorkCard: FunctionComponent<Props> = ({ item }) => {
         )}
 
         <Tags tags={item.tags} />
-        <Text className="w-full md:w-3/5 m-0 md:ml-8 pt-12 text-dark-400 md:mb-0 sm:mb-8 mb-0">
+        <Text className="w-full md:w-4/5 lg:w-3/5 m-0 md:ml-8 pt-12 text-dark-400 md:mb-0 mb-8">
           {item.description}
         </Text>
       </div>
