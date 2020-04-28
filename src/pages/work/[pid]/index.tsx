@@ -19,8 +19,8 @@ const Project: FunctionComponent<Props> = ({ item }) => (
     </Head>
     <SideBar title="Project" />
     <ArrowBack />
-    <div className="flex w-full flex-col justify-between">
-      <div className="flex flex-row justify-end items-center w-full h-full">
+    <div className="flex w-full h-full flex-col justify-between">
+      <div className="flex flex-row justify-end md:items-center w-full h-full">
         <WorkCard item={item} />
       </div>
     </div>
