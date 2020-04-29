@@ -18,7 +18,7 @@ const AboutPage = () => {
       <SideBar title="Contact" />
       <div className="flex w-full h-full flex-col justify-between">
         <ArrowBack />
-        <div className="flex flex-row justify-center flex-wrap w-full h-full px-10 py-2 lg:p-0">
+        <div className="flex flex-row justify-center flex-wrap w-full h-full px-10">
           <div className="w-full md:w-7/12 xl:w-1/2">
             <TextXXL className="text-dark mr-10 mb-6">
               glad you found your way in here!
