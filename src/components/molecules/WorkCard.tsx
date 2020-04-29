@@ -24,7 +24,7 @@ const WorkCard: FunctionComponent<Props> = ({ item }) => {
     }
   };
   return (
-    <div className="bg-mint w-full lg:w-10/12 xl:w-4/5 lg:px-16 p-10 lg:py-20 flex flex-row flex-wrap md:flex-no-wrap shadow-lg">
+    <div className="bg-mint w-full lg:w-10/12 xl:w-4/5 lg:px-16 p-10 lg:py-20 flex flex-row flex-wrap md:flex-no-wrap shadow-xl">
       <div className="flex flex-col">
         <TextTitle className="text-lg">0{item.id}</TextTitle>
         {item.link !== "" ? (
