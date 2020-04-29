@@ -12,7 +12,7 @@ const Layout: FunctionComponent<Props> = ({ children, className }) => {
       <Menu />
       <main
         className={combineClasses([
-          "flex bg-shell flex-col xl:flex-row h-screen w-screen",
+          "flex bg-shell flex-col xl:flex-row h-auto xl:h-screen w-screen",
           className,
         ])}
       >

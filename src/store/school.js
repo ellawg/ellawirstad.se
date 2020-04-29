@@ -18,12 +18,12 @@ export const school = [
     tags: [""],
   },
   {
-    title: "bachelor thesis",
+    title: "bsc. thesis",
     id: 5,
     pid: "",
     link: "http://kth.diva-portal.org/smash/get/diva2:1335129/FULLTEXT01.pdf",
     description: "",
-    short: "Thesis on social media's influence on prosocial behaviours",
+    short: "Bachelor thesis on social media activism",
     tags: [""],
   },
 ];
