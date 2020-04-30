@@ -45,7 +45,7 @@ const AboutCard = () => (
           <span className="font-medium">Go ahead!</span>{" "}
         </LinkInteractive>
       </Text>
-      <a className="underline py-2" href="/static/cv.pdf" download>
+      <a className="underline py-2" href="/static/cv.pdf" target="_blank">
         Download my CV?
       </a>
     </div>
