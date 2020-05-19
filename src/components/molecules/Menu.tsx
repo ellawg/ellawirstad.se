@@ -14,17 +14,17 @@ const Menu = () => {
       <MenuIcon toggleOpen={toggleOpen} open={open} />
       <div
         className={combineClasses([
-          "transition duration-300 ease-in-out fixed top-0 right-0 h-screen w-screen w-4/12 z-40 flex justify-center",
-          open ? "opacity-100 visible bg-beige" : "invisible opacity-0",
+          "transition-width ease-out duration-300 fixed top-0 right-0 h-screen z-40 flex justify-center",
+          open ? "w-screen visible bg-beige" : "w-4/12 invisible",
         ])}
       >
         <div className="w-10/12 sm:w-7/12 mt-8" onClick={() => setOpen(false)}>
-          <TextXXL className="-mt-8">—</TextXXL>
-          <TextXXL>
-            <LinkInteractive to="/about">about</LinkInteractive>
-          </TextXXL>
+          <TextXXL className="-mt-8 select-none">—</TextXXL>
           <TextXXL>
             <LinkInteractive to="/projects">all projects</LinkInteractive>
+          </TextXXL>
+          <TextXXL>
+            <LinkInteractive to="/about">about</LinkInteractive>
           </TextXXL>
           <TextXXL>
             <LinkInteractive to="/contact">contact</LinkInteractive>

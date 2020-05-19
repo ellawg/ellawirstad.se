@@ -5,6 +5,10 @@ module.exports = {
       sans: ["IBM Plex Sans", "sans-serif"],
     },
     extend: {
+      transitionProperty: {
+        height: "height",
+        width: "width",
+      },
       width: {
         "3px": "3px",
         "24px": "24px",
