@@ -7,12 +7,14 @@ import Logo from "../atoms/Logo";
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
+
+  const toggleOpen = () => setOpen(!open);
   return (
     <>
-      <MenuIcon setOpen={setOpen} open={open} />
+      <MenuIcon toggleOpen={toggleOpen} open={open} />
       <div
         className={combineClasses([
-          "transition duration-500 ease-in-out fixed top-0 right-0 h-screen w-screen w-4/12 z-40 flex justify-center",
+          "transition duration-300 ease-in-out fixed top-0 right-0 h-screen w-screen w-4/12 z-40 flex justify-center",
           open ? "opacity-100 visible bg-beige" : "invisible opacity-0",
         ])}
       >

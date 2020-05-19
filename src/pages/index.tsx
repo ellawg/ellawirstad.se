@@ -6,7 +6,6 @@ import WorkBlock from "../components/organisms/WorkBlock";
 import SideBar from "../components/molecules/SideBar";
 import ProjectsBlock from "../components/organisms/ProjectsBlock";
 import { work } from "../store/work.js";
-import Menu from "../components/molecules/Menu";
 
 const IndexPage = () => (
   <Layout>

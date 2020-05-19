@@ -1,7 +1,4 @@
 import React, { FunctionComponent } from "react";
-import { combineClasses } from "@minimizelab/mini_utils";
-import MenuIcon from "../atoms/MenuIcon";
-import Link from "next/link";
 
 interface Props {
   className?: string;
