@@ -4,7 +4,7 @@ import leftArrow from "../../assets/arrow-left.svg";
 import rightArrow from "../../assets/arrow-right.svg";
 import leftArrowHover from "../../assets/arrow-left-hover.svg";
 import rightArrowHover from "../../assets/arrow-right-hover.svg";
-import { combineClasses } from "@minimizelab/mini_utils";
+import classNames from "classnames";
 
 interface Props {
   left?: boolean;
@@ -22,7 +22,7 @@ const Arrow: FunctionComponent<Props> = ({
     <img
       onMouseEnter={() => setInnerHover(true)}
       onMouseLeave={() => setInnerHover(false)}
-      className={combineClasses(["w-8", className])}
+      className={classNames(["w-8", className])}
       src={
         hover || innerHover
           ? left

@@ -8,8 +8,10 @@ import Text from "../components/atoms/Text";
 import TextTitle from "../components/atoms/TextTitle";
 import Head from "next/head";
 import AboutCard from "../components/organisms/AboutCard";
+import { useRouter } from "next/dist/client/router";
 
 const AboutPage = () => {
+  const router = useRouter();
   return (
     <Layout className="bg-mint">
       <Head>
@@ -17,7 +19,7 @@ const AboutPage = () => {
       </Head>
       <SideBar title="Contact" />
       <div className="flex w-full h-full flex-col justify-between">
-        <ArrowBack />
+        <ArrowBack onClick={() => router.back()} />
         <div className="flex flex-row justify-center flex-wrap w-full h-full px-10">
           <div className="w-full md:w-7/12 xl:w-1/2">
             <TextXXL className="text-dark mr-10 mb-6">

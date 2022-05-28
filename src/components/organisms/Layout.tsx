@@ -1,9 +1,10 @@
+import classNames from "classnames";
 import React, { FunctionComponent } from "react";
 import Menu from "../molecules/Menu";
-import { combineClasses } from "@minimizelab/mini_utils";
 
 interface Props {
   className?: string;
+  children: React.ReactNode;
 }
 
 const Layout: FunctionComponent<Props> = ({ children, className }) => {
@@ -11,7 +12,7 @@ const Layout: FunctionComponent<Props> = ({ children, className }) => {
     <>
       <Menu />
       <main
-        className={combineClasses([
+        className={classNames([
           "flex bg-shell flex-col xl:flex-row h-auto xl:h-screen w-screen",
           className,
         ])}

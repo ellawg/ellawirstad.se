@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { combineClasses } from "@minimizelab/mini_utils";
 import Layout from "../components/organisms/Layout";
 import SideBar from "../components/molecules/SideBar";
 
@@ -9,8 +8,11 @@ import Text from "../components/atoms/Text";
 import ProjectLink from "../components/molecules/ProjectLink";
 import ArrowBack from "../components/molecules/ArrowBack";
 import Head from "next/head";
+import classNames from "classnames";
+import { useRouter } from "next/dist/client/router";
 
 const ProjectsPage = () => {
+  const router = useRouter();
   const [hoveredId, setHoveredId] = useState(0);
   return (
     <Layout>
@@ -18,11 +20,11 @@ const ProjectsPage = () => {
         <title>ella — wirstad / all projects</title>
       </Head>
       <SideBar title="All projects" />
-      <ArrowBack />
+      <ArrowBack onClick={() => router.back()} />
       <div className="flex w-full h-full flex-wrap p-8 md:p-20 lg:p-8">
         <div className="flex flex-col lg:items-center items-start justify-center w-full md:2/3 lg:w-1/2">
           <div className="justify-between">
-            {work.map(item => (
+            {work.map((item) => (
               <ProjectLink
                 to={`/work/${item.pid}`}
                 key={item.id}
@@ -32,7 +34,7 @@ const ProjectsPage = () => {
                 {item.title}
               </ProjectLink>
             ))}
-            {school.map(item => (
+            {school.map((item) => (
               <ProjectLink
                 external
                 to={item.link}
@@ -47,10 +49,10 @@ const ProjectsPage = () => {
         </div>
         <div className="flex items-end pb-20 justify-end py-8 lg:justify-center w-full md:1/3 lg:w-1/2">
           <ul>
-            {work.concat(school).map(item => (
+            {work.concat(school).map((item) => (
               <li key={item.id}>
                 <Text
-                  className={combineClasses([
+                  className={classNames([
                     item.id === hoveredId ? "text-orange" : "text-dark",
                   ])}
                 >

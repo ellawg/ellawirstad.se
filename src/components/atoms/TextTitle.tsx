@@ -1,14 +1,13 @@
+import classNames from "classnames";
 import React, { FunctionComponent } from "react";
-import { combineClasses } from "@minimizelab/mini_utils";
 
 interface Props {
   className?: string;
+  children: React.ReactNode;
 }
 
 const TextTitle: FunctionComponent<Props> = ({ children, className }) => (
-  <p className={combineClasses(["font-light text-2xl", className])}>
-    {children}
-  </p>
+  <p className={classNames(["font-light text-2xl", className])}>{children}</p>
 );
 
 export default TextTitle;

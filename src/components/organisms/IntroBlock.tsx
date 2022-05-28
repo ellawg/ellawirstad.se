@@ -3,7 +3,7 @@ import TextXXL from "../atoms/TextXXL";
 import Text from "../atoms/Text";
 
 const IntroBlock: FunctionComponent = () => (
-  <div className="bg-dark px-10 py-20 flex flex-col justify-between">
+  <div className="bg-dark px-10 py-20 flex flex-col justify-between w-full">
     <div></div>
     <div>
       <TextXXL className="text-blue">

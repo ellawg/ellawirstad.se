@@ -1,12 +1,11 @@
-import Link from "next/link";
 import Arrow from "../atoms/Arrow";
 
-const ArrowBack = () => (
-  <Link href="/">
-    <div className="m-8 h-8 cursor-pointer">
-      <Arrow left />
-    </div>
-  </Link>
+const ArrowBack: React.FunctionComponent<{ onClick: () => void }> = ({
+  onClick,
+}) => (
+  <div className="m-8 h-8 cursor-pointer" onClick={onClick}>
+    <Arrow left />
+  </div>
 );
 
 export default ArrowBack;

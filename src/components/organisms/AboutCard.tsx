@@ -14,15 +14,18 @@ const AboutCard = () => (
     <div className="m-6">
       <TextTitle>hej, this is me!</TextTitle>
       <Text className="my-4">
-        I study <span className="font-medium">Media Technology</span> and
-        Engineering at the KTH Royal Institute of Technology in Stockholm.
-      </Text>
-      <Text>
         Your average nerd who spends hours scrolling on Pinterest and tapping
         away in VS Code. I love <span className="font-medium">designing</span>{" "}
         and <span className="font-medium">developing</span> web sites, just like
         this one.
       </Text>
+      <Text>
+        I recently graduated from{" "}
+        <span className="font-medium">Media Technology</span> and Engineering at
+        the KTH Royal Institute of Technology in Stockholm. Currently working as
+        a developer in Gothenburg.
+      </Text>
+
       <Text className="my-4">
         This site is running on
         <LinkInteractive external to="https://nextjs.org/">

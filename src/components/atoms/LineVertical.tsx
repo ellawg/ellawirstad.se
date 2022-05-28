@@ -1,5 +1,5 @@
+import classNames from "classnames";
 import React, { FunctionComponent } from "react";
-import { combineClasses } from "@minimizelab/mini_utils";
 
 interface Props {
   onClick: () => void;
@@ -9,7 +9,7 @@ interface Props {
 const LineVertical: FunctionComponent<Props> = ({ onClick, className }) => (
   <svg
     onClick={onClick}
-    className={combineClasses([className])}
+    className={classNames([className])}
     clip-rule="evenodd"
     fill="currentColor"
     fill-rule="evenodd"

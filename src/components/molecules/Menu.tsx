@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import MenuIcon from "../atoms/MenuIcon";
-import { combineClasses } from "@minimizelab/mini_utils";
 import TextXXL from "../atoms/TextXXL";
 import LinkInteractive from "../atoms/LinkInteractive";
 import Logo from "../atoms/Logo";
+import classNames from "classnames";
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
@@ -13,7 +13,7 @@ const Menu = () => {
     <>
       <MenuIcon toggleOpen={toggleOpen} open={open} />
       <div
-        className={combineClasses([
+        className={classNames([
           "transition-width ease-out duration-300 fixed top-0 right-0 h-screen z-40 flex justify-center",
           open ? "w-screen visible bg-beige" : "w-4/12 invisible",
         ])}

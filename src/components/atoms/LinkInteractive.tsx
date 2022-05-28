@@ -5,6 +5,7 @@ interface Props {
   external?: boolean;
   dynamic?: boolean;
   to: string;
+  children: React.ReactNode;
 }
 
 const LinkInteractive: FunctionComponent<Props> = ({

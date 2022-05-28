@@ -7,6 +7,7 @@ interface Props {
   to: string;
   external?: boolean;
   setHoveredId?: (id: number) => void;
+  children: React.ReactNode;
 }
 
 const ProjectLink: FunctionComponent<Props> = ({

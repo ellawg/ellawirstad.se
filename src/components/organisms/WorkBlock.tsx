@@ -1,11 +1,11 @@
 import React, { FunctionComponent, useState } from "react";
 import Link from "next/link";
-import { combineClasses } from "@minimizelab/mini_utils";
 
 import { WorkData } from "../../types/types";
 import TextTitle from "../atoms/TextTitle";
 import Arrow from "../atoms/Arrow";
 import Tags from "../molecules/Tags";
+import classNames from "classnames";
 
 interface Props {
   work: WorkData;
@@ -22,10 +22,7 @@ const WorkBlock: FunctionComponent<Props> = ({ work }) => {
       >
         <Arrow className="flex self-end mb-10" hover={hover} />
         <TextTitle
-          className={combineClasses([
-            "pb-24",
-            hover ? "text-blue" : "text-dark",
-          ])}
+          className={classNames(["pb-24", hover ? "text-blue" : "text-dark"])}
         >
           0{work.id} — {work.title}
         </TextTitle>
